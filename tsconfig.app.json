@@ -1,0 +1,10 @@
+// Kept for editors/tools that look for it. It inherits every real setting
+// from tsconfig.json - do not re-add "composite", which forces tsc to emit
+// .js and .d.ts files next to the sources and breaks Vite's module resolution.
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": ["src"]
+}
